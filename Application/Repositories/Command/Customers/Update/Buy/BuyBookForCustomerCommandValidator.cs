@@ -1,6 +1,6 @@
 ﻿using FluentValidation;
 
-namespace Application.Repositories.Command.Customers.Update
+namespace Application.Repositories.Command.Customers.Update.Buy
 {
     public class BuyBookForCustomerCommandValidator : AbstractValidator<BuyBookForCustomerCommand>
     {

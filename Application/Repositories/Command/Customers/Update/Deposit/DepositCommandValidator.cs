@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Application.Repositories.Command.Customers.Update
+namespace Application.Repositories.Command.Customers.Update.Deposit
 {
     public class DepositCommandValidator : AbstractValidator<DepositCommand>
     {
