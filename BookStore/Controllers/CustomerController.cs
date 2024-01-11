@@ -1,6 +1,8 @@
 ﻿using Application.Repositories.Command.Customers.Create;
 using Application.Repositories.Command.Customers.Delete;
 using Application.Repositories.Command.Customers.Update;
+using Application.Repositories.Command.Customers.Update.Buy;
+using Application.Repositories.Command.Customers.Update.Deposit;
 using Application.Repositories.Query.Customers;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;

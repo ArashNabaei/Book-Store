@@ -1,7 +1,7 @@
 ﻿using Application.Services.Write.Customers;
 using MediatR;
 
-namespace Application.Repositories.Command.Customers.Update
+namespace Application.Repositories.Command.Customers.Update.Buy
 {
     public class BuyBookForCustomerCommandHanlder : IRequestHandler<BuyBookForCustomerCommand>
     {
