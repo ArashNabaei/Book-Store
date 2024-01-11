@@ -4,7 +4,7 @@ namespace Application.Services.Write.Authors
 {
     public interface IWriteAuthorService
     { 
-        Task CreateAuthorAsync(AuthorDTO authorDTO);
+        Task<int> CreateAuthorAsync(AuthorDTO authorDTO);
 
         Task DeleteAuthorAsync(int Id);
 

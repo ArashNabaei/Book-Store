@@ -41,8 +41,12 @@ namespace BookStore.Controllers
         [HttpPost("CreateAuthor")]
         public async Task<IActionResult> CreateAuthor(CreateAuthorCommand command)
         {
-            await _mediator.Send(command);
-            return Ok();
+            var createdAuthorId = await _mediator.Send(command);
+
+            return CreatedAtRoute(GetAuthorById(createdAuthorId), new
+            {
+                id = createdAuthorId,
+            });
         }
 
         [HttpDelete("DeleteAuthor/{id}")]

@@ -14,7 +14,7 @@ namespace Application.Services.Write.Authors
             _unitOfWork = unitOfWork;
         }
 
-        public async Task CreateAuthorAsync(AuthorDTO authorDTO)
+        public async Task<int> CreateAuthorAsync(AuthorDTO authorDTO)
         {
             var author = new Author
             {
@@ -26,6 +26,7 @@ namespace Application.Services.Write.Authors
             await _unitOfWork.AuthorRepository.CreateAuthorAsync(author);
             await _unitOfWork.SaveChangesAsync();
             
+            return authorDTO.Id;
         }
 
         public async Task DeleteAuthorAsync(int id)
