@@ -43,7 +43,7 @@ namespace Application.Services.Read.Authors
 
         public async Task<IEnumerable<BookDTO>> GetBooksOfAuhorByIdAsync(int id)
         {
-            var books = await _readAuthorRepository.GetBooksOfAuhorByIdAsync(id);
+            var books = await _readAuthorRepository.GetBooksOfAuthorByIdAsync(id);
 
             var result = books.Select(book => new BookDTO
             {

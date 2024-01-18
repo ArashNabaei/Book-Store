@@ -8,7 +8,7 @@ namespace Domain.Repositories
 
         Task<Author> GetAuthorByIdAsync(int id);
 
-        Task<IEnumerable<Book>> GetBooksOfAuhorByIdAsync(int id);
+        Task<IEnumerable<Book>> GetBooksOfAuthorByIdAsync(int id);
 
     }
 }

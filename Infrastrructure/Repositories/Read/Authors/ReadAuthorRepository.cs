@@ -56,7 +56,7 @@ namespace Infrastructure.Repositories.Read.Authors
             return new Author();
         }
 
-        public async Task<IEnumerable<Book>> GetBooksOfAuhorByIdAsync(int id)
+        public async Task<IEnumerable<Book>> GetBooksOfAuthorByIdAsync(int id)
         {
             try
             {
